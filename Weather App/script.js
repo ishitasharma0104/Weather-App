@@ -1,17 +1,30 @@
+let searchQuery = " Learn JavaScript Functions Arrow IIFE ";
 
 
-const inputElem = document.querySelector("input");
-const buttonElem = document.querySelector("#search");
+//trim
+let cleanedQuery = searchQuery.trim();
+console.log("Cleaned String:", cleanedQuery);
+console.log("Length:", cleanedQuery.length);
 
-buttonElem.addEventListener("click", ()=> {
-    const location = inputElem.value.trim();
+// changiing the cases
+console.log("Lowercase:", cleanedQuery.toLowerCase());
+console.log("Uppercase:", cleanedQuery.toUpperCase());
 
-    
-    fn9
+//slicing
+let jsStart = cleanedQuery.indexOf("JavaScript");
+let jsWord = cleanedQuery.substring(jsStart,jsStart+10)
+console.log(jsWord);
+
+//check contain function,arrow, iife
+let lowerQuery = cleanedQuery.toLowerCase();
+console.log( lowerQuery.includes("functions"));
+console.log( lowerQuery.includes("arrow"));
+console.log( lowerQuery.includes("iife"));
+
+//charater and ASCII value
+let a = cleanedQuery.charAt(6);
+let value = cleanedQuery.charCodeAt(0);
+console.log(a);
+console.log(value);
 
 
-   
-fn90
-
-    inputElem.value="";
-})
